@@ -1,0 +1,32 @@
+; Title Block for A1 Size (841×594mm)
+(defun create_title_block ()
+  (command "RECTANGLE" "0,0" "841,594")  ; A1 border
+  (command "RECTANGLE" "20,20" "821,574") ; Inner border
+  
+  ; Company Information
+  (command "TEXT" "40,550" "2.5" "0" "STRUCTURAL DESIGN OFFICE")
+  (command "TEXT" "40,545" "2.0" "0" "Licensed Structural Engineer")
+  
+  ; Project Information Fields
+  (setq fields '(
+    ("PROJECT:" 40 520)
+    ("CLIENT:" 40 515)
+    ("LOCATION:" 40 510)
+    ("DRAWING TITLE:" 40 505)
+    ("DRAWING NO:" 40 500)
+    ("SCALE:" 40 495)
+    ("DATE:" 40 490)
+    ("DESIGNED BY:" 40 485)
+    ("CHECKED BY:" 40 480)
+    ("APPROVED BY:" 40 475)
+  ))
+  
+  ; Draw Revision Table
+  (command "RECTANGLE" "700,550" "821,400")
+  (command "LINE" "700,530" "821,530")
+  (command "TEXT" "710,535" "2.0" "0" "REVISIONS")
+  
+  ; Scale Bar
+  (command "LINE" "40,50" "240,50")
+  (command "TEXT" "140,45" "2.0" "0" "SCALE 1:100")
+)

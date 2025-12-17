@@ -1,0 +1,14 @@
+; AutoCAD Layer Definition (Save as STRUCTURAL_TEMPLATE.DWT)
+; ===========================================================
+; MAIN LAYERS
+(layer_make "A-GRID" 1 "Continuous" 0.50)      ; Red - Grid lines
+(layer_make "A-WALL" 4 "Continuous" 0.25)      ; Cyan - Architectural
+(layer_make "S-COLUMN" 3 "Continuous" 0.50)    ; Green - Columns
+(layer_make "S-BEAM" 5 "Continuous" 0.35)      ; Blue - Beams
+(layer_make "S-SLAB" 6 "Hidden" 0.18)          ; Magenta - Slabs
+(layer_make "S-FOUNDATION" 22 "Continuous" 0.50); Brown - Foundations
+(layer_make "S-REBAR" 2 "Continuous" 0.18)     ; Yellow - Reinforcement
+(layer_make "S-DIM" 7 "Continuous" 0.18)       ; White - Dimensions
+(layer_make "S-TEXT" 7 "Continuous" 0.18)      ; White - Text
+(layer_make "S-HATCH" 8 "Continuous" 0.13)     ; Gray - Hatching
+(layer_make "S-SYMBOL" 1 "Continuous" 0.25)    ; Red - Symbols

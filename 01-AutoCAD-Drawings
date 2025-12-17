@@ -12,3 +12,14 @@
 (layer_make "S-TEXT" 7 "Continuous" 0.18)      ; White - Text
 (layer_make "S-HATCH" 8 "Continuous" 0.13)     ; Gray - Hatching
 (layer_make "S-SYMBOL" 1 "Continuous" 0.25)    ; Red - Symbols
+; Dimension Style for Structural Work
+(command "DIMSTYLE" "S" "STRUCTURAL")
+(setvar "DIMSCALE" 100)
+(setvar "DIMASZ" 2.5)     ; Arrow size
+(setvar "DIMEXE" 1.25)    ; Extension above dimension line
+(setvar "DIMEXO" 0.625)   ; Extension line origin offset
+(setvar "DIMDLI" 3.75)    ; Dimension line increment
+(setvar "DIMTXT" 2.5)     ; Text height
+(setvar "DIMTAD" 1)       ; Text above dimension line
+(setvar "DIMTH" 0)        ; Text inside extensions is horizontal
+(setvar "DIMTOH" 0)       ; Text outside extensions is horizontal
